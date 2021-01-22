@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+Welcome
+</head>
+<body>
+<script>
+console.log(1 + "2" + "2");  //output : 122 // + is an concatenate operator so the output is 122
+
+console.log(1 + +"2" + "2");  //output : 32// "2" is of type variant so + operator converts the string into a number (1+2=3 + "2" ) and + operator concatenate , so the output is 32
+
+console.log(1 + -"1" + "2"); //output : 02// "1" is of type variant so - operator converts the sring to a number (1-1=0 + "2") and + concate these two values and the result is 02
+
+console.log(+"1" + "1" + "2"); //output : 112//+"1" here "1" is of type variant when + operator is used it is converted to a number similarly +"1"  +"2" are converted to numbers 1 and 2 when the concatenate symbol is used the output is 112
+
+console.log( "A" - "B" + "2"); //output : NaN2// "A" is  of type variant string there are no values in it so it is of type Not-a-Number(NaN) when the symbol - is used it subtracts as the type of A b is string it genrates NaN2, here +"2" is converted to a number  
+
+console.log( "A" - "B" + 2); //output : NaN// ""A" is  of type variant string there are no values in it so it is of type Not-a-Number(NaN) when the symbol - is used it subtracts as the type of A b is string it genrates NaN so the output is NaN
+</script>
+</body>
+</html>
